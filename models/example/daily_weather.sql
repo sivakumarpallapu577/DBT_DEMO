@@ -8,7 +8,7 @@ with daily_weather as (
     Humidity,
     clouds
     from {{ source('Demo', 'WEATHER') }}
-    limit 300
+    limit 100
 ),
 
  daily_weather_agg as (
